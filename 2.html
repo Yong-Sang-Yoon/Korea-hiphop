@@ -3,18 +3,32 @@
 <head>
   <title>한국힙합-Just Music</title>
   <meta charset="utf-8">
+
+  <style>
+  #active {color:red;}
+  .saw {color:gray;}
+  h1 {font-size: 40px; text-align:center; margin:0px; border-bottom:3px solid black; padding:30px;}
+  a {color:blue;}
+  ul {border-right:3px solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+  body {margin:0px;}
+  /*현재있는창(active)은 빨간색, 이미봤던창(saw)은 회색, h1태그는 40픽셀, 가운데정렬, a태그는 파란색
+  1-2-3-4 순서대로가지않고도 회색으로 뜰려면 어떻게 해야하지?
+  */
+  #grid{display:grid; grid-template-columns:280px 1fr;}
+  </style>
 </head>
 
 <body>
-<h1><Strong><a href="index.html" title="홈으로">한국힙합</a></strong></h1>
+<h1><Strong><a href="index.html" title="홈으로" class="saw">한국힙합</a></strong></h1>
+    <div id="grid">
   <ul>
-    <li style="margin-top:10px;"><strong><a href="1.html">일리네어 레코즈</a></strong></li>
+    <li><strong><a href="1.html" class="saw">일리네어 레코즈</a></strong></li>
       <ol>
         <li>개요</li>
         <li>멤버</li>
         <li>대표곡</li>
       </ol>
-    <li style="margin-top:10px;"><strong><a href="2.html">Just Music</a></strong></li>
+    <li style="margin-top:10px;"><strong><a href="2.html" class="saw" id="active">Just Music</a></strong></li>
       <ol>
         <li>개요</li>
         <li>멤버</li>
@@ -29,8 +43,8 @@
     <li style="margin-top:10px;"><strong><a href="4.html">Comment & Question</a></strong></li>
   </ul>
 
-
-  <h2 style="margin-top:40px;"><strong><u><a href="http://wejustmusic.com/" target="_blank" title="wejustmusic.com">Just Music</a></u></strong></h2>
+<div>
+  <h2 style="margin-top:20px;"><strong><u><a href="http://wejustmusic.com/" target="_blank" title="wejustmusic.com">Just Music</a></u></strong></h2>
     <h3><strong>1. 개요</strong></h3>
       <p>래퍼 스윙스가 2009년에 세운 레이블. 창립 당시 현재 멤버와는 다른 멤버로 시작했으나 2011년 말 경 기리보이를 제외한 대부분의 멤버가 탈퇴했고, 이후 새로운 멤버 등이 들어오면서 라인업이 완성되었다. 그 후 2014년 8월 13일 스윙스가 브랜뉴뮤직과의 계약이 종료되고 쇼미더머니 3에서 인지도를 크게 끌어올려 본격적으로 큰 규모의 팬층을 만들어냈다. 그리고 새 멤버들을 적극적으로 더 영입하면서 활발히 활동을 하고 있는 중이다. 2017년 4월 스윙스가 인디고 뮤직을 설립하였다. 산하라는 말도 있으나 스윙스는 아니라고 한다. 2018년 10월 11일 WEDAPLUGG라는 새 레이블을 스윙스와 기리보이가 설립했으나 스윙스는 2020년 1월 26일 부로 IMJMWDP 3사의 CEO를 내려놓았다.</p>
 
@@ -64,7 +78,7 @@
       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/OnGzInPVgn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
 
-
-
+    </div>
+  </div>
 </body>
 </html>

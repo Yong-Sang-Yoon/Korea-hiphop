@@ -3,38 +3,55 @@
 <head>
   <title>한국힙합</title>
   <meta charset="utf-8">
+
+  <style>
+    #active {color:red;}
+    .saw {color:gray;}
+    h1 {font-size: 40px; text-align:center; margin:0px; border-bottom:3px solid black; padding:30px;}
+    a {color:blue;}
+    ul {border-right:3px solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+    body {margin:0px;}
+    /*현재있는창(active)은 빨간색, 이미봤던창(saw)은 회색, h1태그는 40픽셀, 가운데정렬, a태그는 파란색
+    1-2-3-4 순서대로가지않고도 회색으로 뜰려면 어떻게 해야하지?
+    */
+    #grid{display:grid; grid-template-columns:280px 1fr;}
+
+
+  </style>
+
 </head>
 
 <body>
-<h1><Strong><a href="index.html" title="홈으로">한국힙합</a></strong></h1>
-  <ul>
-    <li style="margin-top:10px;"><strong><a href="1.html">일리네어 레코즈</a></strong></li>
-      <ol>
-        <li>개요</li>
-        <li>멤버</li>
-        <li>대표곡</li>
-      </ol>
-    <li style="margin-top:10px;"><strong><a href="2.html">Just Music</a></strong></li>
-      <ol>
-        <li>개요</li>
-        <li>멤버</li>
-        <li>대표곡</li>
-      </ol>
-    <li style="margin-top:10px;"><strong><a href="3.html">AOMG</a></strong></li>
-      <ol>
-        <li>개요</li>
-        <li>멤버</li>
-        <li>대표곡</li>
-        </ol>
-    <li style="margin-top:10px;"><strong><a href="4.html">Comment & Question</a></strong></li>
-  </ul>
+  <h1><strong><a href="index.html" title="홈으로">한국힙합</a></strong></h1>
+    <div id="grid">
+      <ul>
+        <li><strong><a href="1.html">일리네어 레코즈</a></strong></li>
+          <ol>
+            <li>개요</li>
+            <li>멤버</li>
+            <li>대표곡</li>
+          </ol>
+        <li style="margin-top:10px;"><strong><a href="2.html">Just Music</a></strong></li>
+          <ol>
+            <li>개요</li>
+            <li>멤버</li>
+            <li>대표곡</li>
+          </ol>
+        <li style="margin-top:10px;"><strong><a href="3.html">AOMG</a></strong></li>
+          <ol>
+            <li>개요</li>
+            <li>멤버</li>
+            <li>대표곡</li>
+            </ol>
+        <li style="margin-top:10px;"><strong><a href="4.html">Comment & Question</a></strong></li>
+      </ul>
 
-  <h2 style="margin-top:40px;"><strong>한국에서의 힙합 음악</strong></h2>
-    <p>한국 힙합을 소위 '국힙'이라 하는데, '국힙'의 특징 중 하나는 록 음악과는 달리 한국 대중음악계에서 나름대로 견고한 입지를 다지는데 성공한 장르란 점이다.[16][17] 비록 1990년대 초에는 힙합 음악은 댄스곡에 들어가는 양념 요소에 불과했지만, 1997년부터 점차 이현도, 김진표, 지누션 등이 힙합 앨범을 내게 되면서 자리를 잡아가기 시작했고, 드렁큰 타이거의 정규 1집 <Year Of The Tiger>가 발매되고[18] 이 앨범이 엄청나게 히트를 치면서 천리안이나 신나라 레코드 등을 통해서 힙합 컴필까지 내는 등 성장세를 유지하다가, 에픽하이, 다이나믹 듀오, 리쌍 등의 무브먼트 쪽의 힙합 뮤지션들과 조PD, 주석 등의 곡이 히트를 치면서 가요계에 성공적으로 정착하였다.</p><p>
+    <div>
+      <h2 style="margin-top:20px;"><strong>한국에서의 힙합 음악</strong></h2>
+        <p>한국 힙합을 소위 '국힙'이라 하는데, '국힙'의 특징 중 하나는 록 음악과는 달리 한국 대중음악계에서 나름대로 견고한 입지를 다지는데 성공한 장르란 점이다.[16][17] 비록 1990년대 초에는 힙합 음악은 댄스곡에 들어가는 양념 요소에 불과했지만, 1997년부터 점차 이현도, 김진표, 지누션 등이 힙합 앨범을 내게 되면서 자리를 잡아가기 시작했고, 드렁큰 타이거의 정규 1집 <Year Of The Tiger>가 발매되고[18] 이 앨범이 엄청나게 히트를 치면서 천리안이나 신나라 레코드 등을 통해서 힙합 컴필까지 내는 등 성장세를 유지하다가, 에픽하이, 다이나믹 듀오, 리쌍 등의 무브먼트 쪽의 힙합 뮤지션들과 조PD, 주석 등의 곡이 히트를 치면서 가요계에 성공적으로 정착하였다.</p><p>
 
-한국에서 힙합 음악이 처음으로 소개되고 현재까지 이른 역사를 살펴보면, 첫 시작은 1980년대 후반으로 거슬러 올라간다. 한국 최초의 랩 음악으로 알려진 홍서범의 '김삿갓'의 경우 다소 뜬금없는 노래 제목과 가사 때문에 간과하기 쉽지만, 엄밀하게 보자면 '한국 최초의 힙합 음악'이라 부를 수 있다. 홍서범의 '김삿갓'이라는 곡은 (훅에 한국적 뽕삘이 약간 있지만) 펑키한 디스코 사운드에 원시적인 미사여구에 가까운 랩을 올린 형태로 1970년대 후반 - 80년대 초중반기의 초창기 올드스쿨 힙합 음악의 작법을 그대로 유지했다. 가사 또한 시대를 감안한다면[20] 운율을 통한 라임적 요소가 다분히 들어있다.</p>
-
-
-
+        한국에서 힙합 음악이 처음으로 소개되고 현재까지 이른 역사를 살펴보면, 첫 시작은 1980년대 후반으로 거슬러 올라간다. 한국 최초의 랩 음악으로 알려진 홍서범의 '김삿갓'의 경우 다소 뜬금없는 노래 제목과 가사 때문에 간과하기 쉽지만, 엄밀하게 보자면 '한국 최초의 힙합 음악'이라 부를 수 있다. 홍서범의 '김삿갓'이라는 곡은 (훅에 한국적 뽕삘이 약간 있지만) 펑키한 디스코 사운드에 원시적인 미사여구에 가까운 랩을 올린 형태로 1970년대 후반 - 80년대 초중반기의 초창기 올드스쿨 힙합 음악의 작법을 그대로 유지했다. 가사 또한 시대를 감안한다면[20] 운율을 통한 라임적 요소가 다분히 들어있다.</p>
+      </div>
+    </div>
 </body>
 </html>

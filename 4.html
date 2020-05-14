@@ -3,32 +3,46 @@
 <head>
   <title>한국힙합</title>
   <meta charset="utf-8">
+
+  <style>
+  #active {color:red;}
+  .saw {color:gray;}
+  h1 {font-size: 40px; text-align:center; margin:0px; border-bottom:3px solid black; padding:30px;}
+  a {color:blue;}
+  ul {border-right:3px solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+  body {margin:0px;}
+  /*현재있는창(active)은 빨간색, 이미봤던창(saw)은 회색, h1태그는 40픽셀, 가운데정렬, a태그는 파란색
+  1-2-3-4 순서대로가지않고도 회색으로 뜰려면 어떻게 해야하지?
+  */
+  #grid{display:grid; grid-template-columns:280px 1fr;}
+  </style>
 </head>
 
 <body>
-<h1><Strong><a href="index.html" title="홈으로">한국힙합</a></strong></h1>
+<h1><Strong><a href="index.html" title="홈으로" class="saw">한국힙합</a></strong></h1>
+  <div id="grid">
   <ul>
-    <li style="margin-top:10px;"><strong><a href="1.html">일리네어 레코즈</a></strong></li>
+    <li><strong><a href="1.html" class="saw">일리네어 레코즈</a></strong></li>
       <ol>
         <li>개요</li>
         <li>멤버</li>
         <li>대표곡</li>
       </ol>
-    <li style="margin-top:10px;"><strong><a href="2.html">Just Music</a></strong></li>
+    <li style="margin-top:10px;"><strong><a href="2.html" class="saw">Just Music</a></strong></li>
       <ol>
         <li>개요</li>
         <li>멤버</li>
         <li>대표곡</li>
       </ol>
-    <li style="margin-top:10px;"><strong><a href="3.html">AOMG</a></strong></li>
+    <li style="margin-top:10px;"><strong><a href="3.html" class="saw">AOMG</a></strong></li>
       <ol>
         <li>개요</li>
         <li>멤버</li>
         <li>대표곡</li>
         </ol>
-    <li style="margin-top:10px;"><strong><a href="4.html">Comment & Question</a></strong></li>
+    <li style="margin-top:10px;"><strong><a href="4.html" class="saw" id="active">Comment & Question</a></strong></li>
   </ul>
-
+<div>
   <h2 style="margin-top:40px;"><strong>Comment</strong></h2>
     <p>
       <div id="disqus_thread"></div>
@@ -70,6 +84,7 @@ s.setAttribute('data-timestamp', +new Date());
   </script>
   <!--End of Tawk.to Script-->
 </p>
-
+</div>
+</div>
 </body>
 </html>
