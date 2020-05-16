@@ -11,10 +11,14 @@
   a {color:blue;}
   ul {border-right:3px solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
   body {margin:0px;}
-  /*현재있는창(active)은 빨간색, 이미봤던창(saw)은 회색, h1태그는 40픽셀, 가운데정렬, a태그는 파란색
-  1-2-3-4 순서대로가지않고도 회색으로 뜰려면 어떻게 해야하지?
-  */
+
   #grid{display:grid; grid-template-columns:280px 1fr;}
+
+  @media(max-width:750px){
+    #grid{display:block;}
+    ul {font-size:10px; border-right:none; solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+    h1 {font-size: 20px; text-align:center; margin:0px; border-bottom:1px solid gray; padding:20px;}
+  }
   </style>
 </head>
 

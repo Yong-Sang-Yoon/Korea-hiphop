@@ -1,0 +1,14 @@
+#active {color:red;}
+.saw {color:gray;}
+h1 {font-size: 40px; text-align:center; margin:0px; border-bottom:3px solid black; padding:30px;}
+a {color:blue;}
+ul {border-right:3px solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+body {margin:0px;}
+
+#grid{display:grid; grid-template-columns:280px 1fr;}
+
+@media(max-width:750px){
+  #grid{display:block;}
+  ul {font-size:10px; border-right:none; solid black; margin:0px; margin-left: 20px; padding:20px; width:200px;}
+  h1 {font-size: 20px; text-align:center; margin:0px; border-bottom:1px solid gray; padding:20px;}
+}
